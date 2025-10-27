@@ -18,3 +18,4 @@ Boxfight Hotfixes / Changes / Experiments
     [Boxfight v3a](boxfight_v3a.tbm) *this has game rules me & strangled came to a conclusion on after some playtesting*
 
 ## shoutout to strangled :)
+big thanks for providing documentation on modding in toribash & reviving my love for making mods. also eternally grateful for your logic for the wall dq system.
