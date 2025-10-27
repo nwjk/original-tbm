@@ -1,0 +1,602 @@
+#!/usr/bin/toribash
+version 15
+message ^61Made in collaboration by ^06Orignal ^61& ^06strangled^61.
+gamerule
+   matchframes 500
+   turnframes 10,20,20,30,30,35,35,40,40,40,50
+   flags 9
+   grip 1
+   dismemberment 0
+   fracture 1
+   disqualification 1
+   dqtimeout 0
+   dqflag 0
+   dismemberthreshold 0
+   fracturethreshold 150
+   pointthreshold 0
+   winpoint 0
+   dojotype 0
+   dojosize 650
+   engagedistance 90
+   engageheight 0
+   engagerotation 0
+   engageplayerpos 
+   engageplayerrot 0,0,0,0,0,0
+   damage 2
+   gravity 0.00 0.00 -30.00
+   sumo 1
+   reactiontime 15
+   drawwinner 0
+   maxcontacts 8
+   ghostlength 100
+   ghostspeed 100
+   ghostcustom 0
+   grabmode 0
+   tearthreshold 0
+   numplayers 2
+env_obj 1
+   shape box
+   pos 0.97 3.12 2.30
+   color 0.30 0.30 0.30 0.00
+   rot 0.00 90.00 0.00
+   sides 4.50 0.01 6.50
+   force 0.00 0.00 0.00
+   flag 24
+   bounce 0.100000
+   friction 10000.00
+   trig_id 1
+   trig_mask 6
+   trig_action 0
+   trig_color 1.00 0.00 0.00 0.20
+env_obj 2
+   shape box
+   pos 4.22 -0.11 2.30
+   color 0.30 0.30 0.30 0.00
+   rot 0.00 90.00 0.00
+   sides 4.50 6.50 0.01
+   force 0.00 0.00 0.00
+   flag 24
+   bounce 0.100000
+   friction 10000.00
+   trig_id 1
+   trig_mask 6
+   trig_action 0
+   trig_color 1.00 0.00 0.00 0.20
+env_obj 3
+   shape box
+   pos 1.00 -3.32 2.28
+   color 0.30 0.30 0.30 0.00
+   rot 0.00 90.00 0.00
+   sides 4.50 0.01 6.50
+   force 0.00 0.00 0.00
+   flag 24
+   bounce 0.100000
+   friction 10000.00
+   trig_id 1
+   trig_mask 6
+   trig_action 0
+   trig_color 1.00 0.00 0.00 0.20
+env_obj 4
+   shape box
+   pos -2.22 -0.10 2.30
+   color 0.30 0.30 0.30 0.00
+   rot 0.00 90.00 0.00
+   sides 4.50 6.50 0.01
+   force 0.00 0.00 0.00
+   flag 24
+   bounce 0.100000
+   friction 10000.00
+   trig_id 1
+   trig_mask 6
+   trig_action 0
+   trig_color 1.00 0.00 0.00 0.20
+env_obj 5
+   shape box
+   pos 4.22 3.12 2.28
+   color 0.00 0.00 0.00 1.00
+   rot 0.00 90.00 0.00
+   sides 4.50 0.05 0.05
+   force 0.00 0.00 0.00
+   flag 24
+   bounce 0.100000
+   friction 10000.00
+   trig_id 1
+   trig_mask 6
+   trig_action 0
+env_obj 6
+   shape box
+   pos 4.22 -3.32 2.28
+   color 0.00 0.00 0.00 1.00
+   rot 0.00 90.00 0.00
+   sides 4.50 0.05 0.05
+   force 0.00 0.00 0.00
+   flag 24
+   bounce 0.100000
+   friction 10000.00
+   trig_id 1
+   trig_mask 6
+   trig_action 0
+env_obj 7
+   shape box
+   pos -2.22 -3.32 2.28
+   color 0.00 0.00 0.00 1.00
+   rot 0.00 90.00 0.00
+   sides 4.50 0.05 0.05
+   force 0.00 0.00 0.00
+   flag 24
+   bounce 0.100000
+   friction 10000.00
+   trig_id 1
+   trig_mask 6
+   trig_action 0
+env_obj 8
+   shape box
+   pos -2.22 3.12 2.28
+   color 0.00 0.00 0.00 1.00
+   rot 0.00 90.00 0.00
+   sides 4.50 0.05 0.05
+   force 0.00 0.00 0.00
+   flag 24
+   bounce 0.100000
+   friction 10000.00
+   trig_id 1
+   trig_mask 6
+   trig_action 0
+env_obj 9
+   shape box
+   pos 1.01 -0.10 4.49
+   color 0.30 0.30 0.30 0.00
+   rot 0.00 0.00 0.00
+   sides 6.50 6.50 0.01
+   force 0.00 0.00 0.00
+   flag 24
+   bounce 0.100000
+   friction 10000.00
+   trig_id 1
+   trig_mask 6
+   trig_action 0
+   trig_color 1.00 0.00 0.00 0.20
+env_obj 10
+   shape box
+   pos 4.22 -0.10 4.50
+   color 0.00 0.00 0.00 1.00
+   rot 0.00 90.00 0.00
+   sides 0.05 6.50 0.05
+   force 0.00 0.00 0.00
+   flag 24
+   bounce 0.100000
+   friction 10000.00
+   trig_id 1
+   trig_mask 6
+   trig_action 0
+env_obj 11
+   shape box
+   pos -2.22 -0.10 4.50
+   color 0.00 0.00 0.00 1.00
+   rot 0.00 90.00 0.00
+   sides 0.05 6.50 0.05
+   force 0.00 0.00 0.00
+   flag 24
+   bounce 0.100000
+   friction 10000.00
+   trig_id 1
+   trig_mask 6
+   trig_action 0
+env_obj 12
+   shape box
+   pos 1.00 -3.32 4.50
+   color 0.00 0.00 0.00 1.00
+   rot 0.00 90.00 0.00
+   sides 0.05 0.05 6.50
+   force 0.00 0.00 0.00
+   flag 24
+   bounce 0.100000
+   friction 10000.00
+   trig_id 1
+   trig_mask 6
+   trig_action 0
+env_obj 13
+   shape box
+   pos 1.00 3.12 4.50
+   color 0.00 0.00 0.00 1.00
+   rot 0.00 90.00 0.00
+   sides 0.05 0.05 6.50
+   force 0.00 0.00 0.00
+   flag 24
+   bounce 0.100000
+   friction 10000.00
+   trig_id 1
+   trig_mask 6
+   trig_action 0
+env_obj 14
+   shape box
+   pos 1.00 3.12 0.00
+   color 0.00 0.00 0.00 1.00
+   rot 0.00 90.00 0.00
+   sides 0.05 0.05 6.50
+   force 0.00 0.00 0.00
+   flag 24
+   bounce 0.100000
+   friction 10000.00
+   trig_id 1
+   trig_mask 6
+   trig_action 0
+env_obj 15
+   shape box
+   pos 1.00 -3.32 0.00
+   color 0.00 0.00 0.00 1.00
+   rot 0.00 90.00 0.00
+   sides 0.05 0.05 6.50
+   force 0.00 0.00 0.00
+   flag 24
+   bounce 0.100000
+   friction 10000.00
+   trig_id 1
+   trig_mask 6
+   trig_action 0
+env_obj 16
+   shape box
+   pos 4.22 -0.10 0.00
+   color 0.00 0.00 0.00 1.00
+   rot 0.00 90.00 0.00
+   sides 0.05 6.50 0.05
+   force 0.00 0.00 0.00
+   flag 24
+   bounce 0.100000
+   friction 10000.00
+   trig_id 1
+   trig_mask 6
+   trig_action 0
+env_obj 17
+   shape box
+   pos -2.22 -0.10 0.00
+   color 0.00 0.00 0.00 1.00
+   rot 0.00 90.00 0.00
+   sides 0.05 6.50 0.05
+   force 0.00 0.00 0.00
+   flag 24
+   bounce 0.100000
+   friction 10000.00
+   trig_id 1
+   trig_mask 6
+   trig_action 0
+player 0
+   body head
+      sides 0.20 0.00 0.00
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   body breast
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   body chest
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   body stomach
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   body groin
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   body r_pecs
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   body r_biceps
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   body r_triceps
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   body l_pecs
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   body l_biceps
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   body l_triceps
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   body r_butt
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   body l_butt
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   body r_thigh
+      sides 0.12 0.30 0.00
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   body l_thigh
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   body l_leg
+      sides 0.13 0.30 0.00
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   body r_leg
+      sides 0.13 0.30 0.00
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   joint neck
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   joint chest
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   joint lumbar
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   joint abs
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   joint r_pecs
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   joint r_shoulder
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   joint r_elbow
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   joint l_pecs
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   joint l_shoulder
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   joint l_elbow
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   joint r_glute
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   joint l_glute
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   joint r_hip
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   joint l_hip
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   joint r_knee
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+   joint l_knee
+      trig_id 2
+      trig_mask 1
+      trig_action 2
+      trig_color 0.00 0.00 1.00 1.00
+player 1
+   body head
+      sides 0.20 0.00 0.00
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   body breast
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   body chest
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   body stomach
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   body groin
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   body r_pecs
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   body r_biceps
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   body r_triceps
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   body l_pecs
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   body l_biceps
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   body l_triceps
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   body r_butt
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   body l_butt
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   body r_thigh
+      sides 0.12 0.30 0.00
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   body l_thigh
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   body l_leg
+      sides 0.13 0.30 0.00
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   body r_leg
+      sides 0.13 0.30 0.00
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   joint neck
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   joint chest
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   joint lumbar
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   joint abs
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   joint r_pecs
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   joint r_shoulder
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   joint r_elbow
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   joint l_pecs
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   joint l_shoulder
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   joint l_elbow
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   joint r_glute
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   joint l_glute
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   joint r_hip
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   joint l_hip
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   joint r_knee
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
+   joint l_knee
+      trig_id 4
+      trig_mask 1
+      trig_action 1
+      trig_color 0.00 0.00 1.00 1.00
