@@ -14,7 +14,7 @@ Boxfight Hotfixes / Changes / Experiments
     [Boxfight v1](boxfight_v1.tbm) *very cramped, based on the default aikido dojo size*
     [Boxfight v2](boxfight_v2.tbm) *too big for my personal vision of what I wanted, but based on the aikidobigdojo dojo size.*
     [Boxfight v3](boxfight_v3.tbm) *medium sized dojo*
-#### all of [boxfight_v3a-e](boxfight_v3-experimental) branch is probably broken, and boxfight_v3b is *very* broken. please play v3a for aikido-esque gameplay. v4 is a hotfix for v3b
+#### all of [boxfight_v3a-e](boxfight_v3-experimental) branch is probably broken, and boxfight_v3b is *very* broken. please play v3a for aikido-esque gameplay. v4b is intended gameplay.
 
 ### Boxfight Hotfixes
     [Boxfight v3a](boxfight_v3a.tbm) *this has game rules me & strangled came to a conclusion on after some playtesting*
